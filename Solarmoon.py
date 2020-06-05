@@ -34,6 +34,7 @@ def display():
    glTranslatef(1,0,0) 
 
    glPushMatrix()
+   glPushMatrix()
    glTranslatef(0,0,0) 
    glColor3f (0.0, 0.0, 1.0)
    glRotatef(23.12,0,0,1)
@@ -44,11 +45,12 @@ def display():
    
    glPushMatrix()
    glRotatef(x,0,1,0)
-   glTranslatef(2,0,0) 
+   glTranslatef(1,0,0) 
    glColor3f (1.0, 1.0, 1.0)
    glRotatef(x,0,1,0)
    glRotatef(-90,1,0,0)
    glutWireSphere(0.08,15,10)  #moon
+   glPopMatrix()
    glPopMatrix()
    glFlush ()
 
