@@ -27,15 +27,15 @@ def display():
    glPushMatrix()
    glColor3f (1.0, 0.0, 0.0)
    glRotatef(-90,1,0,0)
-   glutWireSphere(1,15,20)  #sun
+   glutSolidSphere(1,15,20)  #sun
    glPopMatrix()
     
    glRotatef(a,0,1,0)
-   glTranslatef(1,0,0) 
+   glTranslatef(3,0,0) 
 
    glPushMatrix()
    glPushMatrix()
-   glTranslatef(0,0,0) 
+   # glTranslatef(1,0,0) 
    glColor3f (0.0, 0.0, 1.0)
    glRotatef(23.12,0,0,1)
    glRotatef(x,0,1,0)
